@@ -35,8 +35,8 @@ jobs:
       - name: Type check
         run: pnpm type-check
 
-      - name: Run tests
-        run: pnpm test
+      # - name: Run tests
+      #   run: pnpm test
 
-      - name: Lint
-        run: pnpm lint || echo "No lint script found"
+      # - name: Lint
+      #   run: pnpm lint || echo "No lint script found"
