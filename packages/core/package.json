@@ -1,0 +1,50 @@
+{
+  "name": "@ai-toolkit/core",
+  "version": "0.1.0",
+  "description": "Core agent orchestration for AI Toolkit",
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "tools",
+    "handoffs",
+    "orchestration"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "ai": "^4.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "ai": ">=4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

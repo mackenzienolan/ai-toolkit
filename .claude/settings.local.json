@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm type-check:*)",
+      "Bash(for dir in cache memory guardrails react)",
+      "Bash(do)",
+      "Bash(config=\"/Users/mackenzienolan/Developer/macknolan/ai-toolkit/packages/$dir/tsup.config.ts\")",
+      "Bash(if [ -f \"$config\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(cat:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(pnpm build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

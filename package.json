@@ -1,0 +1,57 @@
+{
+  "name": "ai-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unified SDK for building production-ready AI agents with handoffs, memory, and caching",
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "openai",
+    "anthropic",
+    "multi-agent",
+    "orchestration",
+    "tools",
+    "cache",
+    "memory",
+    "handoffs",
+    "ai-sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-toolkit.git"
+  },
+  "license": "MIT",
+  "author": "Mackenzie Nolan",
+  "email": "mack@macknolan.com",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "clean": "pnpm -r exec rm -rf dist .turbo node_modules",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "prerelease": "pnpm build && pnpm type-check && pnpm test"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@types/node": "^22.0.0",
+    "prettier": "^3.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
