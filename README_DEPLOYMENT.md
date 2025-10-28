@@ -16,7 +16,8 @@ This repository is now fully configured for publishing to npm with automated CI/
 
 1. **GitHub Actions Workflows**
    - [.github/workflows/ci.yml](.github/workflows/ci.yml) - Continuous Integration
-   - [.github/workflows/publish.yml](.github/workflows/publish.yml) - Automated Publishing
+   - [.github/workflows/publish.yml](.github/workflows/publish.yml) - Automated Publishing + GitHub Releases
+   - [.github/workflows/release.yml](.github/workflows/release.yml) - Enhanced Release Notes (optional)
 
 2. **Changesets for Version Management**
    - Installed `@changesets/cli`
@@ -97,6 +98,7 @@ pnpm release
 
 - **Quick Start**: [QUICK_START_PUBLISHING.md](QUICK_START_PUBLISHING.md)
 - **Full Guide**: [PUBLISHING.md](PUBLISHING.md)
+- **GitHub Releases**: [GITHUB_RELEASES.md](GITHUB_RELEASES.md)
 
 ## 🔧 Available Scripts
 
@@ -163,7 +165,8 @@ Your monorepo is ready to publish. The automated workflow will:
 1. ✅ Run tests and type checks on every PR
 2. ✅ Create release PRs when changesets exist
 3. ✅ Automatically publish to npm when release PRs merge
-4. ✅ Update CHANGELOGs automatically
-5. ✅ Handle version bumps correctly
+4. ✅ Create GitHub Releases with release notes
+5. ✅ Update CHANGELOGs automatically
+6. ✅ Handle version bumps correctly
 
 Happy publishing! 🚀
